@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SQL Builder</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>SQL Builder</h1>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+              INSERT INTO
+              <input type="text" name="input" class="textarea" id="input" placeholder="Table name">
+              (
+                <input type="text" name="field_names" class="textarea" id="field_names" placeholder="Field names">
+              )
+              VALUES
+              (
+                <input type="text" name="field_names" class="textarea" id="values" placeholder="Values">
+              );
+          </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                        <textarea class="output" placeholder="Result" cols="30" rows="5" readonly></textarea>
+                </div>
+            </div>  
+
+            <div id="btn-clear">
+                    <Button id="clear" class="button">Clear</Button>
+            </div>  
+    </div>
+
+
+<script src="assets/js/parser.js"></script>    
+</body>
+</html>
